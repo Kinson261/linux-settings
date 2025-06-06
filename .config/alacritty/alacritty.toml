@@ -100,7 +100,7 @@ hide_when_typing = true
 [keyboard]
 bindings = [
 { key = "T", mods = "Control|Shift", action = "CreateNewWindow" },
-{ key = "Q", mods = "Control", action = "Quit" },
+# { key = "Q", mods = "Control", action = "Quit" },
 { key = "C", mods = "Control|Shift", action = "Copy" },
 { key = "V", mods = "Control|Shift", action = "Paste"},
 { key = "ArrowUp", mods = "Control|Shift", action = "ScrollPageUp"},
