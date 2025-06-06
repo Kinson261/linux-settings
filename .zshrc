@@ -26,7 +26,8 @@ HISTSIZE=100000
 SAVEHIST=100000
 setopt SHARE_HISTORY
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting emotty emoji colorize tailscale)
+# plugins=(git zsh-autosuggestions zsh-syntax-highlighting emotty emoji colorize tailscale)
+plugins=(git zsh-syntax-highlighting emotty emoji colorize tailscale)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,3 +106,27 @@ export PATH=$HOME/.cargo/bin:$PATH
 # Syncthing completions
 autoload -U +X bashcompinit && bashcompinit
 complete -C /usr/bin/syncthing syncthing
+
+export GPG_TTY=$(tty)
+
+# yadm autocompletion
+fpath=(~/.config/yadm/completion/zsh/ $fpath)
+autoload -U compinit
+compinit
+
+# the fuck
+eval $(thefuck --alias fuck)
+
+# fzf
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+# eza
+alias ls="eza --long --color=always --icons=always"
+
+# execute after start
+fastfetch
+# y
+# spf
+
+
