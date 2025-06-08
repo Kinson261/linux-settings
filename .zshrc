@@ -122,11 +122,9 @@ eval $(thefuck --alias fuck)
 source <(fzf --zsh)
 
 # eza
-alias ls="eza --long --color=always --icons=always"
+alias ls="eza --color=always --icons=always"
 
 # execute after start
 fastfetch
 # y
 # spf
-
-
