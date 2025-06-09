@@ -56,7 +56,7 @@ set breaklonglines
 
 ## Interpret digits given on the command line after a colon after a filename
 ## as the line number to go to in that file.
-# set colonparsing
+set colonparsing
 
 ## Constantly display the cursor position in the status bar or minibar.
 set constantshow
@@ -131,7 +131,7 @@ set multibuffer
 # set operatingdir ""
 
 ## Remember the cursor position in each file for the next editing session.
-set positionlog
+# set positionlog
 
 ## Preserve the XON and XOFF keys (^Q and ^S).
 # set preserve
