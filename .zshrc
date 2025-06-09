@@ -124,6 +124,9 @@ source <(fzf --zsh)
 # eza
 alias ls="eza --color=always --icons=always"
 
+# zoxide
+eval "$(zoxide init --cmd cd zsh)"
+
 # execute after start
 fastfetch
 # y
