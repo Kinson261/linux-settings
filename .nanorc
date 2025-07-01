@@ -32,13 +32,13 @@ set atblanks
 set autoindent
 
 ## Back up files to the current filename plus a tilde.
-# set backup
+set backup
 
 ## The directory to put unique backup files in.
 # set backupdir ""
 
 ## Use bold text instead of reverse video text.
-# set boldtext
+set boldtext
 
 ## Treat any line with leading whitespace as the beginning of a paragraph.
 # set bookstyle
@@ -59,7 +59,7 @@ set breaklonglines
 set colonparsing
 
 ## Constantly display the cursor position in the status bar or minibar.
-set constantshow
+# set constantshow
 
 ## Use cut-from-cursor-to-end-of-line by default.
 # set cutfromcursor
@@ -94,7 +94,7 @@ set linenumbers
 # set locking
 
 ## Fall back to slow libmagic to try and determine an applicable syntax.
-# set magic
+set magic
 
 ## The opening and closing brackets that are found by a matching-bracket
 ## search.  This may not contain blank characters.  The opening brackets
@@ -131,7 +131,7 @@ set multibuffer
 # set operatingdir ""
 
 ## Remember the cursor position in each file for the next editing session.
-# set positionlog
+set positionlog
 
 ## Preserve the XON and XOFF keys (^Q and ^S).
 # set preserve
@@ -215,7 +215,7 @@ set trimblanks
 
 ## Let an unmodified Backspace or Delete erase the marked region (instead
 ## of a single character, and without affecting the cutbuffer).
-# set zap
+set zap
 
 ## Hide the bars plus help lines and use the whole terminal as edit area.
 # set zero
