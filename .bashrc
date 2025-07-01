@@ -24,14 +24,10 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-
 eval "$(oh-my-posh init bash --config ~/.oh-my-posh-themes/sim-web.omp.json)"
 # eval "$(oh-my-posh init bash --config ~/.oh-my-posh-themes/stelbent.minimal.omp.json)"
 # eval "$(oh-my-posh init bash --config ~/.oh-my-posh-themes/emodipt-extend.omp.json)"
 # eval "$(oh-my-posh init bash --config ~/.oh-my-posh-themes/nordtron.omp.json)"
-
-
-# [ -f ~/.inshellisense/bash/init.sh ] && source ~/.inshellisense/bash/init.sh
 
 # carapace-bin
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
