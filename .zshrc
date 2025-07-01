@@ -58,13 +58,12 @@ eval "$(oh-my-posh init zsh --config ~/.oh-my-posh-themes/catppuccin_frappe.omp.
 # yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	$HOME/yazi/target/release/yazi "$@" --cwd-file="$tmp"
-	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		builtin cd -- "$cwd"
-	fi
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
-alias yazi='y'
+#alias yazi='y'
 
 # superfile
 # spf
@@ -116,18 +115,20 @@ compinit
 
 # the fuck
 eval $(thefuck --alias fuck)
+alias F="fuck"
 
 # fzf
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
 # eza
-alias ls="eza --color=always --icons=always"
+alias ls="eza --color=always --icons=always --grid"
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
+# Prompt at the bottom
+printf '\n%.0s' {1..100}
+
 # execute after start
 fastfetch
-# y
-# spf
