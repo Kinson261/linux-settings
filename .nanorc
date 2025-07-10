@@ -46,7 +46,7 @@ set boldtext
 ## The characters treated as closing brackets when justifying paragraphs.
 ## This may not include any blank characters.  Only closing punctuation,
 ## optionally followed by these closing brackets, can end sentences.
-# set brackets ""')>]}"
+set brackets ""')>]}"
 
 ## Automatically hard-wrap the current line when it becomes overlong.
 set breaklonglines
@@ -109,11 +109,11 @@ set matchbrackets "(<[{)>]}"
 ## mouse clicks can be used to place the cursor, set the mark (with
 ## two clicks), and execute shortcuts.  The mouse will work in the
 ## X Window System, and on the console when gpm is running.
-set mouse
+# set mouse
 
 ## Switch on multiple file buffers (inserting a file will put it into
 ## a separate buffer).
-set multibuffer
+# set multibuffer
 
 ## Don't convert files from DOS/Mac format.
 # set noconvert
