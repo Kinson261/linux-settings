@@ -111,5 +111,5 @@ bindings = [
 
 [general]
 live_config_reload = true
-import = [ "~/.config/alacritty/themes/themes/monokai_pro.toml" ]
+# import = [ "~/.config/alacritty/themes/themes/monokai_pro.toml" ]
 # import = [ "~/.config/alacritty/themes/themes/rose_pine_moon.toml" ]
