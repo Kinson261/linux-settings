@@ -1,4 +1,4 @@
-ZSH_THEME="intheloop" # set by `omz`
+ZSH_THEME="ys" # set by `omz`
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -45,7 +45,7 @@ export PATH=$HOME/.local/bin:$PATH
 # eval "$(oh-my-posh init zsh --config ~/.oh-my-posh-themes/emodipt-extend.omp.json)"
 # eval "$(oh-my-posh init zsh --config ~/.oh-my-posh-themes/nordtron.omp.json)"
 # eval "$(oh-my-posh init zsh --config ~/.oh-my-posh-themes/1_shell.omp.json)"
-eval "$(oh-my-posh init zsh --config ~/.oh-my-posh-themes/catppuccin_frappe.omp.json)"
+# eval "$(oh-my-posh init zsh --config ~/.oh-my-posh-themes/catppuccin_frappe.omp.json)"
 # eval "$(oh-my-posh init zsh --config ~/.oh-my-posh-themes/hunk.omp.json)"
 # eval "$(oh-my-posh init zsh --config ~/.oh-my-posh-themes/if_tea.omp.json)"
 # eval "$(oh-my-posh init zsh --config ~/.oh-my-posh-themes/kushal.omp.json)"
@@ -89,6 +89,9 @@ spf() {
 }
 alias spf='spf --fix-hotkeys --fix-config-file'
 
+#system
+alias man="batman"
+
 # obsidian ollama
 alias ollama_obsidian="sudo systemctl stop ollama.service && OLLAMA_ORIGINS=app://obsidian.md* ollama serve"
 
@@ -123,12 +126,13 @@ source <(fzf --zsh)
 
 # eza
 alias ls="eza --color=always --icons=always --grid"
+alias tree="eza --tree --git-ignore"
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
-# Prompt at the bottom
-printf '\n%.0s' {1..100}
+# television
+# source $HOME/.config/television/shell/integration.zsh
 
 # execute after start
 fastfetch
